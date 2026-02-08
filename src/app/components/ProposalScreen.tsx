@@ -12,7 +12,7 @@ export default function ProposalScreen({ onYesClick }: ProposalScreenProps) {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="fixed inset-0 flex items-center justify-center bg-gradient-to-br from-pink-100 via-rose-100 to-purple-100"
+      className="fixed inset-0 flex items-center justify-center bg-gradient-to-br from-pink-100 via-rose-100 to-purple-100 pb-24"
     >
       <div className="text-center px-6 max-w-4xl w-full">
         <motion.h1
@@ -51,9 +51,11 @@ export default function ProposalScreen({ onYesClick }: ProposalScreenProps) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}
-          className="mt-16"
+          className="mt-20 flex justify-center"
         >
-          <CountdownTimer />
+          <div className="w-full max-w-3xl">
+            <CountdownTimer />
+          </div>
         </motion.div>
       </div>
 
